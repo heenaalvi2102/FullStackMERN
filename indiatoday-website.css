@@ -1,0 +1,72 @@
+header span{
+    padding: 15px;
+    height: 100px;
+}
+
+header{
+    text-align: center;
+}
+
+
+/* img{
+    height: 200px;
+    width: 200px;
+} */
+
+
+
+
+#it-title{
+    font-size: xx-large;
+    width: 110px;
+    display: inline-block;
+    /* box-sizing: border-box; */
+
+    color: brown;
+}
+
+
+li{
+    display: inline;
+    padding: 1px;
+   
+}
+
+nav{
+    background-color: brown;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+   
+}
+
+#live{
+    background-color: black;
+    color: white;
+}
+
+
+.Live-News .icons{
+    /* text-align: right; */
+    float: right;
+
+    display: inline-block;
+    
+}
+
+.Live-News{
+    background-color: yellow;
+}
+
+
+main, p{
+    clear: right;
+}
+
+
+ul{
+    padding: 8px;
+}

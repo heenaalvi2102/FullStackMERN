@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 25% 200px 1fr 2fr;
+            /* grid-template-columns: repeat(4, 100px); */
+            grid-template-rows: 100px 50px 200px;
+            gap: 10px;
+        
+        }
+
+        .two{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .grid-items{
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items one">One</div>
+        <div class="grid-items two">Two</div>
+        <div class="grid-items three">Three</div>
+        <div class="grid-items four">Four</div>
+        <div class="grid-items five">Five</div>
+
+    </div>
+</body>
+</html>

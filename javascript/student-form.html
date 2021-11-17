@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="calculate()">click here</button>
+    <!-- filter method using to create json  -->
+   
+    <script>
+
+        var a;
+        var b;
+        var c;
+        var result=0;
+        var avg=0;
+        function calculate(){
+           a= parseInt(form1.txtNum1.value);
+           a= parseInt(form1.txtNum2.value);
+           a= parseInt(form1.txtNum3.value);
+           result=a+b+c;
+
+           avg=result/3;
+
+
+           document.write("the total is :"+"<b>" +result + "<b>" + "</br>" );
+           document.write("the Avg is :"+"<b>" +avg + "<b>" + "</b>" );
+
+           if(avg>50)
+           {
+            document.write("the Grade is :"+"<b>" + "Pass" + "<b>" );
+            }
+            else
+            {
+                document.write("the Greade is :"+"<b>" + "Fail" + "<b>" );
+           }
+           
+
+        }
+    </script>
+    <h2>student marks calculation system</h2>
+    <form name="form1">
+        <b>Student name:</b><INPUT type="text" name="heena"></br>
+        <b>Enter marks 1:</b><INPUT type="textbox" name="txtNum1"></br>
+        <b>Enter marks 2:</b><INPUT type="textbox" name="txtnum2"></br>    
+        <b>Enter marks 3:</b><INPUT type="textbox" name="txtnum3"></br>
+
+         <INPUT type="button" value="Submit" onclick='Submit()'>   
+    </form> 
+    
+</body>
+</html>

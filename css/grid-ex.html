@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,200px,fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 10px;
+        }
+        .one{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:1 ;
+            grid-row-end: 5;
+            
+            
+
+        }
+        .two{
+            grid-row-start:1;
+            grid-column-end: 4;
+        }
+        three{
+            grid-row-start: 1;
+            grid-column-end: 3;
+        }
+        .four{
+            grid-row-start: 2;
+            grid-column-end: 4;
+        }
+        .five{
+            grid-row-start: 2;
+            grid-column-end: 5;
+        }
+        
+        .grid-items{
+            border: solid 2px black;
+        
+            
+        }
+        .grid-items img{
+            height: 200px;
+            width: 200px;
+        } 
+        
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items one">
+            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/11B97/production/_120699527_vote.jpg" alt="">
+        </div>
+        <div class="grid-items two">
+            <img src="" alt="">
+        </div>
+        <div class="grid-items three">
+            <img src="" alt="">
+        </div>
+        <div class="grid-items four">
+            <img src="" alt="">
+        </div>
+        <div class="grid-items five">
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>

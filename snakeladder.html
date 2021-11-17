@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snakeladder</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+             background-color:beige; 
+            min-height:1oovh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .board{
+            background: linear-gradient(rgb(238, 97, 97),rgb(228, 228, 19));
+            width: 90vmin;
+            height: 92vmin;
+            border: solid 2px black;
+            display: grid;
+            grid-template-rows: repeat(10,1fr);
+            grid-template-columns: repeat(10,1fr);
+
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class ="board"></div>
+  </div>  
+</body>
+</html>

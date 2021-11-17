@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<style>
+    .BBCTitle{
+        background-color: white;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .opening-cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+    .opening-cards > a:hover{
+        color: turquoise;
+        text-decoration-thickness: 3px;
+
+    }
+    .first-card{
+        grid-column: 1/3;
+    }
+    
+    .first-card .card-img-container{
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+
+    .first-card img{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+    @media (max-width:1433px) {
+        .center-content{
+           width: calc(63% + 445px) ;
+        }
+    }
+    @media (max-width:1278px) {
+        .center-content{
+           width: calc(63% + 445px) ;
+        }
+        .opening-cards > a:nth-child(n+2) p{
+            font-size: 18px;
+
+        }
+        .first-card p{
+            font-size: 32px;
+
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div id="BBCTitle">
+        <div class="center-content title-text">welcome to the BBC</div>
+    </div>
+    <div class="document-container" style="margin-top: 20px">
+    <div class="center-content poening-cards"></div>
+    </div>
+</body>
+</html>
