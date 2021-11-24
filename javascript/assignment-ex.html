@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <script type="">  
+  
+        function searchMovie(){
+        
+          var movieName = document.getElementById("s1");
+            url="http://www.maciejtreder.com/asynchronous-javascript/"
+        
+              
+                let fetchRes = fetch(url, movieName);
+        
+                fetchRes.then(res =>
+                    res.json()).then(d => {
+                        console.log(d)
+                    })
+        
+                }
+        
+        //  function searchMovie{
+        
+        
+        
+        // console.log(movieName);
+        
+        //   }
+            </script>
+</head>
+<body>
+<form name="sm" method="post" >
+
+    <input type="search" name="searchName" id="s1">
+    <input type="button" name="Search" value="Search" onClick="searchMovie()">
+
+
+   
+
+</form>
+</body>
+</html>

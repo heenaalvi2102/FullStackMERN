@@ -7,7 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+  <script>
+      fetch(
+          "https://api.edamam.com/api/recipes/v2?type=public&q=egg&app_id=3a6bab34&app_key=cf6ebfdcf5cbd02bde7f24df44ae3c41", 
+          {
+              method: "GET",
+
+          }
+      )
+      .then ((response) =>{
+          console.log(response);
+          let data = response .json;
+          return data;
+
+
+      })
+      .then ((result)=>{
+          console.log(result);
+      })
+      .catch((err)=>{
+          console.log(err)
+      });
+  </script> 
 </body>
 </html>
 
